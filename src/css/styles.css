@@ -13,6 +13,10 @@
   border-radius: 5px;
 }
 
+:root {
+  --colorFondo: #c6538c;
+}
+
 .App {
   display: flex;
   flex-direction: column;

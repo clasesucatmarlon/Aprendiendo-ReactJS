@@ -3,6 +3,7 @@ import Estados from './components/Estados'
 import EstilosEnLinea from './components/EstilosEnLinea'
 import Header from './components/Header'
 import Propiedades from './components/Propiedades'
+import StyleComponents from './components/StyleComponents'
 
 import './css/styles.css'
 
@@ -15,6 +16,7 @@ function App() {
         <Propiedades nombre={nombre}/>
         <Estados />
         <EstilosEnLinea />
+        <StyleComponents />
     </div>
   );
 }
