@@ -8,8 +8,7 @@ class EstilosEnLinea extends Component {
   render() {
     const estilos = {
       backgroundColor: 'white',
-      height: '300px',
-      width: '70%'
+      width: '100%'
     }
     const titulo = {
       color: 'red',
