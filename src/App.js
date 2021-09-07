@@ -1,4 +1,5 @@
 import React from 'react'
+import Estados from './components/Estados'
 import Header from './components/Header'
 import Propiedades from './components/Propiedades'
 
@@ -10,9 +11,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container">
         <Propiedades nombre={nombre}/>
-      </div>
+        <Estados />
     </div>
   );
 }
