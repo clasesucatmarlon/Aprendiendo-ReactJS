@@ -1,4 +1,5 @@
 import React from 'react'
+import ArrayObjects from './ArrayObjects'
 import Estados from './components/Estados'
 import EstilosEnLinea from './components/EstilosEnLinea'
 import Formularios from './components/Formularios'
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Header />
         <Propiedades nombre={nombre}/>
+        <ArrayObjects />
         <SpreadOperator />
         <RenderizadoCondicional />
         <Formularios />
