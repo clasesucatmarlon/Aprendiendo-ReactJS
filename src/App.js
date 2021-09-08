@@ -5,6 +5,7 @@ import Formularios from './components/Formularios'
 import Header from './components/Header'
 import Propiedades from './components/Propiedades'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
+import SpreadOperator from './components/SpreadOperator'
 import StyleComponents from './components/StyleComponents'
 
 import './css/styles.css'
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
         <Propiedades nombre={nombre}/>
+        <SpreadOperator />
         <RenderizadoCondicional />
         <Formularios />
         <Estados />
