@@ -20,7 +20,7 @@ class SpreadOperator extends Component {
       };
 
     const autos = {...auto1, ...auto2}
-    console.log(autos)
+    //console.log(autos)
     
     return (
       <div className='container'>
