@@ -12,6 +12,8 @@ import SpreadOperator from './components/SpreadOperator'
 import StyleComponents from './components/StyleComponents'
 
 import './css/styles.css'
+import { Fetch2 } from './components/Fetch2'
+import { Fetch } from './components/Fetch'
 
 function App() {
   const [saludo, setSaludo] = useState('')
@@ -31,6 +33,8 @@ function App() {
     <div className="App">
       <Header />
         <Propiedades nombre={nombre}/>
+        <Fetch />
+        <Fetch2 />
         <ComunicacionComponentes nombre={nombre} apellido='García Morales' SaludoHijo={SaludoHijo} SaludoHermano={SaludoHermano}/>
         <ComunicacionComponentes2 saludo={saludo} dayMes={dayMes}/>
         <ArrayObjects />

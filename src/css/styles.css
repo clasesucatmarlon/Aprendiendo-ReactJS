@@ -42,4 +42,106 @@
   color: white;
 }
 
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.infor h6 {
+  padding-bottom: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #07d0f3;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+form {
+  background-color: #231E39;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  margin: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-right: 10px;
+  color: white;
+}
+form input {
+  height: 25px;
+  width: 40%;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border: none;
+  padding: 3px;
+}
+form button {
+  height: 25px;
+  width: 20%;
+}
+
+.card-container {
+  background-color: #231E39;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: white;
+  padding-top: 20px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.card-container span {
+  font-weight: bold;
+}
+.card-container .round {
+  box-shadow: 0px 0px 5px 2px rgba(175, 212, 214, 0.75);
+  border-radius: 50%;
+  width: 50%;
+}
+.card-container .infor {
+  background-color: #1F1A36;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+.card-container .infor ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .infor ul span {
+  font-weight: bold;
+}
+.card-container .infor ul li {
+  background-color: #07d0f3;
+  border: 1px solid #2D2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px;
+  color: black;
+}
+
 /*# sourceMappingURL=styles.css.map */
