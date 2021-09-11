@@ -1,3 +1,14 @@
+// Trabajar con rutas: https://bluuweb.github.io/react-udemy/
+// Instalar: npm install react-router-dom
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
+
+
 import React, {useState} from 'react'
 import ArrayObjects from './ArrayObjects'
 import ComunicacionComponentes2 from './components/ComunicacionComponentes2'
@@ -30,21 +41,47 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header />
-        <Propiedades nombre={nombre}/>
-        <Fetch />
-        <Fetch2 />
-        <ComunicacionComponentes nombre={nombre} apellido='García Morales' SaludoHijo={SaludoHijo} SaludoHermano={SaludoHermano}/>
-        <ComunicacionComponentes2 saludo={saludo} dayMes={dayMes}/>
-        <ArrayObjects />
-        <SpreadOperator />
-        <RenderizadoCondicional />
-        <Formularios />
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <Propiedades nombre={nombre}/>
+          </Route>
+          <Route path="/fetch">
+            <Fetch />
+            <Fetch2 />
+          </Route>
+          <Route path="/comunicacion">
+            <ComunicacionComponentes nombre={nombre} apellido='García Morales' SaludoHijo={SaludoHijo} SaludoHermano={SaludoHermano}/>
+            <ComunicacionComponentes2 saludo={saludo} dayMes={dayMes}/>
+          </Route>
+          <Route path="/arrayobjetos">
+            <ArrayObjects />
+          </Route>
+          <Route path="/spread" >
+            <SpreadOperator />
+          </Route>
+          <Route path="/condicional" >
+            <RenderizadoCondicional />
+          </Route>
+          <Route path="/formularios" >
+            <Formularios />
+          </Route>
+          <Route path="/estados" >
+            <Estados />
+          </Route>
+          <Route path="/stylecomponentes" >
+            <StyleComponents />
+          </Route>
+        </Switch>
+
+        {/* <Fetch />
         <Estados />
         <EstilosEnLinea />
-        <StyleComponents />
-    </div>
+        <StyleComponents /> */}
+      </div>
+    </Router>
   );
 }
 
