@@ -58,14 +58,14 @@ const Formularios = () => {
 
     setTimeout( () => {
       window.location.reload()
-    }, 4000)
+    }, 6000)
     
   }
 
   return (
     <div className='container'>
       <h2>FORMULARIOS</h2>
-      <form onSubmit={e => handleEnviar(e)}>
+      <form onSubmit={e => handleEnviar(e)} className='p-3'>
         <label>Nombres:</label>
         <input 
           type="text" 

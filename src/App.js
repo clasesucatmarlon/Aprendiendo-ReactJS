@@ -16,15 +16,16 @@ import ComunicacionComponentes from './components/ComunicacionComponentes'
 import Estados from './components/Estados'
 import EstilosEnLinea from './components/EstilosEnLinea'
 import Formularios from './components/Formularios'
+import Formularios2 from "./components/Formularios2";
 import Header from './components/Header'
 import Propiedades from './components/Propiedades'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import SpreadOperator from './components/SpreadOperator'
 import StyleComponents from './components/StyleComponents'
-
-import './css/styles.css'
 import { Fetch2 } from './components/Fetch2'
 import { Fetch } from './components/Fetch'
+
+import './css/styles.css'
 
 function App() {
   const [saludo, setSaludo] = useState('')
@@ -67,6 +68,7 @@ function App() {
           </Route>
           <Route path="/formularios" >
             <Formularios />
+            <Formularios2 />
           </Route>
           <Route path="/estados" >
             <Estados />
